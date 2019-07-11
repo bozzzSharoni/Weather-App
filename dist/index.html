@@ -10,12 +10,48 @@
 </head>
 
 <body>
+
+    <input type='text' id='zen' placeholder="Type your City">
+    <button id='battle'onclick=handleSearch()>Search</button>
+
+    <script id='template' type='text/x-handlebars-template'>
+        {{#each data}}
+        <div class= 'City'>
+            <h2 class='name'>{{name}}</h2>
+            <p class='temp'>{{temperature}}c </p>
+            <p class= 'condition'>{{conditions}}</p>
+            <p class= 'update'>{{updatedAt}}</p>
+            <img class="image" src="{{conditionPic}}">
+            <button class= 'save'>Save</button>
+            <button class= 'remove'>Remove</button>
+        </div>
+        {{/each}}
+       
+    </script>
+
+    <div id= "container">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js"></script>
     <script src="TempManager.js"></script>
-    <script src= "Renderer.js"></script>
-    <script src= "main.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

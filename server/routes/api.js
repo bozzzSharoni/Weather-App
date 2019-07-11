@@ -39,4 +39,5 @@ router.delete('/city/:cityName', function(req, res){
     })
     res.end()
 })
+
 module.exports = router

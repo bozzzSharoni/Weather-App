@@ -5,8 +5,8 @@ const request = require('request')
 const api = require('./server/routes/api')
 
 
-app.use(express.static(path.join(__dirname, '..', 'dist')))
-app.use(express.static(path.join(__dirname, '..', 'node_modules')))
+app.use(express.static(path.join(__dirname, 'dist')))
+
 
 
 const bodyParser = require('body-parser')
